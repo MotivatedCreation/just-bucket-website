@@ -92,6 +92,17 @@ const Layout = (props: LayoutProps) => {
       <Container maxWidth="xl">
         {children}
       </Container>
+      <Typography
+        variant="body2"
+        align="center"
+        sx={{
+          mt: 2,
+          mb: 2,
+          color: 'text.secondary',
+        }}
+      >
+        <Link color='inherit' href='/privacy-policy'>Privacy Policy</Link>
+      </Typography>
       <Copyright />
     </>
   );
