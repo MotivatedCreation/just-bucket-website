@@ -79,16 +79,6 @@ const Layout = (props: LayoutProps) => {
       >
         <Link href="/" underline='none'><strong>Just Bucket</strong></Link>
       </Typography>
-      {/* <Typography
-        variant="h4"
-        component="h1"
-        align="center"
-        sx={{ mt: 2, mb: 2 }}
-      >
-        <Link color="inherit" href="/" underline='none'>
-          {APP_NAME}
-        </Link>
-      </Typography> */}
       <Container maxWidth="xl">
         {children}
       </Container>
