@@ -14,7 +14,7 @@ import PrivacyPolicy from './PrivacyPolicy';
 import { CssBaseline } from '@mui/material';
 import { APP_NAME, HOME_URL } from './constants';
 import { ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import { AppProvider, type Branding } from '@toolpad/core/AppProvider';
 
 
@@ -33,12 +33,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         branding={BRANDING}
       >
         <Layout>
-          <BrowserRouter>
+          <HashRouter>
             <Routes>
               <Route path="/" element={<App />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </Layout>
       </AppProvider>
     </ThemeProvider>

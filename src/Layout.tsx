@@ -91,7 +91,7 @@ const Layout = (props: LayoutProps) => {
           color: 'text.secondary',
         }}
       >
-        <Link color='inherit' href='/privacy-policy'>Privacy Policy</Link>
+        <Link color='inherit' href='#/privacy-policy'>Privacy Policy</Link>
       </Typography>
       <Copyright />
     </>
