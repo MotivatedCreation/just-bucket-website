@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import { alpha } from '@mui/system';
-import { APP_NAME } from './constants';
+import { APP_NAME, AppTextLogo } from './constants';
 
 
 const Copyright = () => {
@@ -21,10 +21,11 @@ const Copyright = () => {
       }}
     >
       {'Copyright © '}
+      {new Date().getFullYear()}{' '}
       <Link color="inherit" href="/">
-        {APP_NAME}
-      </Link>{' '}
-      2013-{new Date().getFullYear()}.
+        {APP_NAME}.
+      </Link>
+      {' '}All rights reserved.
     </Typography>
   );
 };
@@ -72,16 +73,19 @@ const Layout = (props: LayoutProps) => {
       ))}
       <Typography
         variant="h5"
-        align="center"
+        align="left"
         sx={{
           mt: 2,
+          ml: 2,
+          mr: 2
         }}
       >
-        <Link href="/" underline='none'><strong>Just Bucket</strong></Link>
+        <Link href="/" underline='none'><AppTextLogo sx={{ width: 24, height: 24 }} /></Link>
       </Typography>
       <Container maxWidth="xl">
         {children}
       </Container>
+      <Copyright />
       <Typography
         variant="body2"
         align="center"
@@ -93,7 +97,6 @@ const Layout = (props: LayoutProps) => {
       >
         <Link color='inherit' href='#/privacy-policy'>Privacy Policy</Link>
       </Typography>
-      <Copyright />
     </>
   );
 };
