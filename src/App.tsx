@@ -20,7 +20,7 @@ export const App = () => {
           <strong>Just Bucket</strong>
         </Typography>
         <Typography variant='subtitle1'>
-          Going Everywhere.
+          Going Everywhere.™
         </Typography>
       </Stack>
     </Box>
