@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 
-import { AppTextLogo } from './constants';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
 
 export const App = () => {
@@ -14,10 +15,14 @@ export const App = () => {
         justifyContent: 'center'
       }}
     >
-      <AppTextLogo sx={{
-        width: '25%',
-        height: '25%'
-      }} />
+      <Stack>
+        <Typography variant='h1'>
+          <strong>Just Bucket</strong>
+        </Typography>
+        <Typography variant='subtitle1'>
+          Going Everywhere.
+        </Typography>
+      </Stack>
     </Box>
   );
 }
