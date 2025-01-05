@@ -295,9 +295,8 @@ const PrivacyPolicy = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography sx={{ whiteSpace: 'pre-line' }}>
-            If you have any questions about this Privacy Policy or need assistance with your privacy rights, please contact us at:
-
-            {"\n"}{"\n"}Email: [Insert Email Address]
+            If you have any questions about this Privacy Policy or need assistance with your privacy rights, please contact us:
+            {'\n'}{'\n'}<Link href="mailto:contact@justbucket.app" color="info.main">contact@justbucket.app</Link>.
           </Typography>
         </AccordionDetails>
       </Accordion>

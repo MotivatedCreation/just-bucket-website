@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
@@ -86,17 +88,26 @@ const Layout = (props: LayoutProps) => {
         {children}
       </Container>
       <Copyright />
-      <Typography
-        variant="body2"
-        align="center"
+      <Stack
+        spacing={2}
+        direction='row'
+        divider={<Divider orientation="vertical" flexItem />}
         sx={{
           mt: 2,
-          mb: 2,
-          color: 'text.secondary',
+          mb: 4,
+          justifyContent: 'center'
         }}
       >
-        <Link color='inherit' href='#/privacy-policy'>Privacy Policy</Link>
-      </Typography>
+        <Typography
+          variant="body2"
+          align="center"
+          sx={{
+            color: 'text.secondary',
+          }}
+        >
+          <Link color='inherit' href='#/privacy-policy'>Privacy Policy</Link>
+        </Typography>
+      </Stack>
     </>
   );
 };
