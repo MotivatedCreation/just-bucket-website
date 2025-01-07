@@ -16,10 +16,10 @@ export const App = () => {
       }}
     >
       <Stack>
-        <Typography variant='h1'>
+        <Typography variant='h1' color='primary'>
           <strong>Just Bucket</strong>
         </Typography>
-        <Typography variant='subtitle1'>
+        <Typography variant='subtitle1' color='secondary'>
           Going Everywhere.™
         </Typography>
       </Stack>

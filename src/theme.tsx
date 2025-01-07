@@ -5,22 +5,26 @@ const theme = createTheme({
   cssVariables: true,
   palette: {
     primary: {
-      main: '#000',
+      main: 'rgba(0, 0, 0, 1)',
     },
     secondary: {
-      main: '#19857b',
+      main: 'rgba(145, 145, 150, 1)',
+    },
+    text: {
+      primary: 'rgba(0, 0, 0, 1)',
+      secondary: 'rgba(145, 145, 150, 1)'
     },
     info: {
-      main: '#4294F7'
+      main: 'rgba(0, 150, 255, 1)'
     },
     warning: {
-      main: '#FDF451'
+      main: 'rgba(255, 224, 0, 1)'
     },
     success: {
-      main: '#5CC83B'
+      main: 'rgba(0, 205, 0, 1)'
     },
     error: {
-      main: '#B83B37'
+      main: 'rgba(220, 44, 48, 1)'
     }
   },
 });
