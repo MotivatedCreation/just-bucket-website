@@ -104,24 +104,6 @@ const PrivacyPolicy = () => {
       <Accordion>
         <AccordionSummary>
           <Typography component="span">
-            Legal Basis for Processing Data
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography sx={{ whiteSpace: 'pre-line' }}>
-            We process data based on the following legal grounds:
-            <ul>
-              <li>Consent: When you agree to personalized ads.</li>
-              <li>Legitimate Interests: To improve app performance and provide relevant content.</li>
-              <li>Legal Obligation: When required to comply with laws.</li>
-            </ul>
-            You may withdraw consent at any time by adjusting your device’s privacy settings.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary>
-          <Typography component="span">
             How We Use Your Information
           </Typography>
         </AccordionSummary>
@@ -130,10 +112,13 @@ const PrivacyPolicy = () => {
             We use the information collected to:
             <ul>
               <li>Provide and improve app functionality.</li>
-              <li>Personalize advertisements displayed within the app.</li>
               <li>Monitor app performance and resolve technical issues.</li>
               <li>Comply with legal requirements.</li>
             </ul>
+
+            We use Google AdMob to display native ads, which may collect data for ad personalization.
+
+            {"\n"}{"\n"}For more information, refer to <GooglePrivacyPolicy />.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -184,10 +169,13 @@ const PrivacyPolicy = () => {
             We retain data only as long as necessary for the purposes stated in this Privacy Policy:
 
             <ul>
+              <li>Comply with legal requirements.</li>
+              <li>Provide and improve app functionality.</li>
+              <li>Monitor app performance and resolve technical issues.</li>
               <li>Advertising data may be retained based on AdMob’s policies.</li>
             </ul>
 
-            We encourage you to review their privacy policies to understand how your data is handled:
+            We encourage you to review Google AdMob's privacy policies to understand how your data is handled:
             {"\n"}<GooglePrivacyPolicy />
           </Typography>
         </AccordionDetails>
