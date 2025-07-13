@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
         <AccordionDetails>
           <Typography sx={{ whiteSpace: 'pre-line' }}>
             <strong>a. Personal Information</strong>
-            {"\n"}We do not collect personally identifiable information, such as your name, email address, or phone number.
+            {"\n"}We may collect personally identifiable information, such as your name, email address, or phone number.
 
             {"\n\n"}<strong>b. Non-Personal Information</strong>
             {"\n"}We may collect non-personal information automatically, including:
