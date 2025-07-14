@@ -1,10 +1,13 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
-        "appID": "H95WDK6QG2.com.Jonathan-Sullivan.Just-Bucket",
-        "paths": ["/"]
+        "appIDs": ["H95WDK6QG2.com.Jonathan-Sullivan.Just-Bucket"],
+        "components": [
+          {
+            "/": "/"
+          }
+        ]
       }
     ]
   }
