@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "H95WDK6QG2.com.Jonathan-Sullivan.Just-Bucket",
+        "paths": [ "/auth-redirect", "/" ]
+      }
+    ]
+  }
+}
