@@ -5,7 +5,8 @@
         "appIDs": ["H95WDK6QG2.com.Jonathan-Sullivan.Just-Bucket"],
         "components": [
           {
-            "/": "/"
+            "/": "/*",
+            "comment": "Matches any URL whose path starts with /"
           }
         ]
       }
